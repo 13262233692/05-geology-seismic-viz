@@ -1,0 +1,59 @@
+.wiggle-plot-container {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.wiggle-svg {
+  display: block;
+  background: #ffffff;
+}
+
+.wiggle-area {
+  fill: #000000;
+  transition: opacity 0.2s ease;
+}
+
+.wiggle-line {
+  stroke: #000000;
+  stroke-width: 0.5;
+  fill: none;
+}
+
+.trace-group {
+  pointer-events: none;
+}
+
+.x-axis, .y-axis {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  color: #666;
+}
+
+.x-axis path, .y-axis path,
+.x-axis line, .y-axis line {
+  stroke: #ccc;
+  stroke-width: 0.5;
+}
+
+.wiggle-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  pointer-events: none;
+}
+
+.wiggle-info div {
+  margin: 2px 0;
+  line-height: 1.4;
+}
